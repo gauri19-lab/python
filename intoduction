@@ -1,0 +1,249 @@
+PYTHON PROGRAMMING
+
+
+1.Output Variable::
+1.Text should be enclosed in single/double quotes.
+print(‘Hello,World’)
+print(“Hello,World”)
+
+
+2.Multiple o/p are joined using ,(comma) and use (“ ”)delimiter.
+
+print(“Hello,World”)
+
+3. Comma used as empty space in o/p
+print(5,5)
+print(5,” ”,5)  #two spaces between between 5
+
+
+4. print(8)
+    print(13, end=” ”)  # used to not skip new line
+    print(21)
+
+5. you output multiple variables, separated by a comma:
+ex:x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+
+
+6. operator (+)to output multiple variables:
+ex:x = "Python"
+y = "is"
+z = "awesome"
+print(x+ y+ z)   # no space
+
+7.ex:a=1
+b="hello"
+print(a+b)   # error
+Tip:cant use with string and number.
+
+
+8.Indentation
+  Use to indicate block of code.
+Ex:
+If 5>2
+    print(“hello”)
+
+Tip:
+-You have to use same no of spaces in same block of code.
+-No of spaces is up to you, but it has to be at least one.
+
+
+9.Comments:
+-single line comment (#)
+-.written for more than one line: triple quotes(“””   “”””)
+
+10.Variables:
+  x=6
+    y=”hello”
+
+
+10.casting: If you want to specify  data types to variables.
+   x=str(3)        #3
+   x=int(3)        #3
+   x=float(3)     #3.0
+
+11. type() function to get the datatype
+  x=5
+print(type(x))              #<class int>
+
+12. Case sensitive:(Age,AGE,age) treated differently
+
+13. Multiple values to multiple variables
+     x, y, z = "Orange", 123, # "Cherry"
+     print(x)
+     print(y)
+     print(z)
+     print(type(y))
+
+  
+14.Single value to multiple variables. 
+    x = y = z = "Orange"
+    print(x)
+    print(y)
+    print(z)
+
+
+Examples for practice:
+output the squares (using multiplication) of numbers from 1 to 5 on separate lines.
+print(1,"-",1*1)
+print(2,"-",2*2)
+print(3,"-",3*3)
+print(4,"-",4*4)
+print(5,"-",5*5)
+
+
+2. output the square of * (stars) of size 4
+print("*" *  4)
+print("*" *  4)
+print("*" *  4)
+print("*" *  4)
+
+
+
+Global Variable: 
+Used both inside of functions and outside
+ex1: x = "awesome"
+ def myfunc():
+ print("Python is " + x)
+ myfunc()
+
+
+
+2.ex:
+x = "awesome"
+def myfunc():
+   x = "fantastic"
+   print("Python is " + x)
+
+myfunc()
+print("Python is " + x)
+
+
+o/p::#Python is fantastic
+       #Python is awesome
+
+
+
+
+
+
+Practice examples:
+
+x=20
+y=6
+print(x//y)
+print(x/y)
+
+print('--------------------------------------')
+
+temperature=25.5
+y=25.5+273
+print('Celsius -',temperature)
+print('Kelvin -',y)
+print('------------------------------------------------------------')
+
+1.x=4.5*4.5
+y=4*4.5
+print('Area of a Square =',x)
+print('perimeter =',y)
+
+2.x=4.5
+area=x*x
+perimeter=4*x
+print(area)
+print(perimeter)
+print('------------------------------------------------------------------------')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DataType:
+
+
+1.Int
+x = 1
+y = 356562225548877112457896325648456612378945674136985265431978625
+z = -3255522
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+print('-----------------------------------------------------------------------------')
+
+2. float
+ex1:
+x = 1.1056897412589632659784512
+y = 1.0
+z = -35.59
+
+print(type(x))
+print(type(y))
+print(type(z))
+print('------------------------------------------------------------------------')
+
+ex2:
+x = 35e3
+y = 12E4
+z = -87.7e100
+
+print(type(x))
+print(type(y))
+print(type(z))
+print('--------------------------------------------------------')
+
+3.complex:
+x = 3+5j
+y = 5J
+z = -5j
+
+print(type(x))
+print(type(y))
+print(type(z))
+print('------------------------------------------------------------------------')
+
+ex4:
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+
+
+
+#convert from int to float:
+a = float(x)
+
+#convert from float to int:
+b = int(y)
+
+#convert from int to complex:
+c = complex(y)
+
+Tip: cant convert complex to int & float
+
+
+
+Built in module:random
+
+import random
+print(random.randrange(16, 100))
+
+
+5.To check python version:
+   Import sys
+   print(sys.version)
+
+
+
+
